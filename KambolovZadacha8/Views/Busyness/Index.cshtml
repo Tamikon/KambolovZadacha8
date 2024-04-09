@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница busyness</title>
+</head>
+<body>
+    <h1>Список предметов</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Название предмета</th>
+                <th>Статус</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Здесь будут отображаться предметы -->
+            <tr>
+                <td>Математика</td>
+                <td>Очно</td>
+                <td>
+                    <button onclick="redirectToChangePage()">Редактировать</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="redirectToChangePage()">Добавить новый предмет</button>
+
+    <script>
+
+        function redirectToChangePage() {
+            window.location.href = "/busyness/change";
+        }
+    </script>
+</body>
+</html>
