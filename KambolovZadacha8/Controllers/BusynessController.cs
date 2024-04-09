@@ -21,6 +21,11 @@ public class BusynessController : Controller
         return View();
     }
 
+    public IActionResult Add()
+    {
+        return View();
+    }
+
     [HttpPost]
     public IActionResult Save(Subject subject)
     {

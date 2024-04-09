@@ -21,18 +21,22 @@
                 <!-- Здесь будут отображаться предметы -->
                 <tr>
                     <td>
-                        <button class="btn btn-link" onclick="redirectToChangePage()">Редактировать</button>
+                        <button class="btn btn-primary" onclick="redirectToChangePage()">Редактировать</button>
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <button class="btn btn-primary" onclick="redirectToChangePage()">Добавить новый предмет</button>
+        <button class="btn btn-primary" onclick="redirectToAddPage()">Добавить новый предмет</button>
     </div>
 
     <script>
         function redirectToChangePage() {
             window.location.href = "/busyness/change";
+        }
+
+        function redirectToAddPage() {
+            window.location.href = "/busyness/add";
         }
     </script>
 </body>
